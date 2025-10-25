@@ -1,5 +1,7 @@
 name: tests
+
 on: [push, pull_request]
+
 jobs:
   unit:
     runs-on: ubuntu-latest
@@ -10,4 +12,10 @@ jobs:
           python-version: "3.11"
       - run: pip install -r requirements.txt
       - run: pytest -q
-
+      
+  # Add integration tests or other jobs as needed
+  # integration:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - run: echo "Add integration tests here"
