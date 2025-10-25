@@ -1,0 +1,5 @@
+hostname: CAMPUS-EDGE-1
+domain_name: lab.local
+ntp_server: 192.0.2.10
+vty_ssh_only: true
+banner_motd: "Authorized access only"
