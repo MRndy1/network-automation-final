@@ -1,0 +1,12 @@
+banner motd Authorized access only
+version 15.2
+service timestamps debug datetime msec
+hostname CAMPUS-EDGE-1
+!
+ip domain-name lab.local
+!
+line vty 0 4
+ transport input ssh
+!
+end
+ntp server 192.0.2.10
